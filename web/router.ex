@@ -20,6 +20,7 @@ defmodule PhoenixTestApp.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     resources "/users", UserController
+    socket "/socket", UserSocket
   end
 
   # Other scopes may use custom stacks.
